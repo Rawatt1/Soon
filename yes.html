@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #yesButton {
+        font-size: 30px; 
+        padding: 20px 50px; 
+        margin-top: 60px;
+        animation: blink-animation 1s infinite;
+      }
+      @keyframes blink-animation {
+      0%, 100% {
+        opacity: 1; /* Fully visible */
+      }
+      50% {
+        opacity: 0; /* Fully transparent */
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/wTDG30TB/yes.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <button class="btn" id="yesButton" onclick="nextPage()">
+        मणि जागो पै 🌺
+      </button>
+      <audio id="backgroundMusic" autoplay loop>
+        <source src="audio.mp3" type="audio/mp3">
+      
+      </audio>
+    
+      <script>
+       
+        document.addEventListener('DOMContentLoaded', function() {
+          var audio = document.getElementById("backgroundMusic");
+          audio.play();
+        });
+      </script>
+    </div>
+  </body>
+</html>
